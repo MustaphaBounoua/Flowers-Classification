@@ -24,4 +24,15 @@ We will add a dense layer to the InceptionV3 model and retrain the last 50 layer
 # Flower DataSet 
 
 Flowers classification dataset (http://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) consists of 102 flower categories commonly occurring in the United Kingdom. Each class contains between 40 and 258 images:
+# Model
+
+Fine tune for 2 epochs (full passes through all training data)
+We make 2*8 epochs, where epoch is 1/8 of our training data to see progress more often
+
+loss='categorical_crossentropy',  # we train 102-way classification
+optimizer=tf.keras.optimizers.Adamax(lr=1e-2),  # we can take big lr here because we fixed first layers
+metrics=['accuracy']  
+
+# Results 
+
 

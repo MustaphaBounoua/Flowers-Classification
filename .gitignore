@@ -130,3 +130,7 @@ dmypy.json
 
 *.tgz
 *.mat
+
+## data files
+/data
+/model
