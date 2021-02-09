@@ -35,4 +35,4 @@ metrics=['accuracy']
 
 # Results 
 
-
+0.9505 Accuracy
